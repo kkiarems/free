@@ -1,3 +1,27 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Check credentials
+    if ($email === 'user@gmail.com' && $password === 'user') {
+        header("Location: html/client/index.html"); // Redirect to user dashboard
+        exit();
+    } else if ($email === 'admin@gmail.com' && $password === 'admin') {
+        header("Location: html/admin/index.html"); // Redirect to admin page
+        exit();
+    } else {
+        // Invalid credentials
+        $error = "Invalid email or password";
+    }
+}
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
