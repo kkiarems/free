@@ -103,6 +103,19 @@
         width: 550px; 
     } 
     } 
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        float: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
     
     @media screen and (max-width: 400px) { 
     .recent-Articles { 
