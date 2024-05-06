@@ -75,7 +75,7 @@
   <script  src="./script.js"></script>
   
   <script>
-    document.getElementById('login-form').addEventListener('submit', function(event) {
+    document.getElementById('login-form').addEventListener('login-button', function(event) {
         event.preventDefault(); // Prevent form submission
     
         var email = document.getElementById('email').value;
@@ -96,7 +96,7 @@
         document.getElementById('login-form').action = actionUrl;
     
         // Submit the form
-        this.submit();
+        this.login-button();
     });
     </script>
     
